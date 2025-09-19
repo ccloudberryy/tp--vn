@@ -56,14 +56,19 @@ while True:
         print("...")
         sleep(1)
         if life_lost == 0:
+            print("Liv kvar: 3")
             print("Bra jobbat, du överlevde dagen! Du fick till och med en maraboukaka av Elvira.")
         elif life_lost == 1:
+            print("Liv kvar: 2")
             print("Kunde gjort bättre, men rektorn gav dig en stjärna för att ha avklarat dagen ändå.")
         elif life_lost == 2:
+            print("Liv kvar: 1")
             print("Det var nära gränsen, men du överlevde dagen!")
         elif life_lost == 3:
+            print("Liv kvar: 0")
             print("Dagen är över och du fick tomater kastade på dig av elever samt lärare. Dags att gråta dig själv till sömns.")
         elif life_lost == 4:
+            print("Liv kvar: -1")
             print("Hur lyckades du?")
         break
 
