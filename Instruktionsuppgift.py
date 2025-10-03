@@ -222,6 +222,7 @@ while True:
                     print('"Då anmäler jag dig", säger Elvira skämtsamt.')
                 if choice.lower() == "n" or choice.lower() == "no":
                     print('"Nej, no sir!" säger Emil. Mattias glor på Emil och hintar på att han ska sätta sig ner.')
+                    print('"Jag önskar jag hade en redbull just nu..." sa Mattias till sig själv tyst.')
             if choice.lower() == "n" or choice.lower() == "no":
                 print("Emil sätter sig ner och börjar jobba på sin server. Elvira känner sig överraskad.")
         if sen == 0:
@@ -245,7 +246,7 @@ while True:
             sleep(longdelay)
             print('"Jag kan lägga ut en till uppgift åt dig om du vill?", fortsätter han.')
             sleep(longdelay)
-            print('"Nej tack. Jag väntar bara. 67." säger Emil')
+            print('"Nej tack. Jag väntar bara. 67." säger Emil.')
             sleep(longdelay)
             print("Emil stirrar på sin dator i 10 minuter tills det äntligen blir rast.")
             sleep(longdelay)
@@ -253,7 +254,7 @@ while True:
         sleep(longdelay)
         print("Både Wilmer och Emil sätter sig ner på soffan.")
         sleep(longdelay)
-        print('"Ska vi dra på Coop? Coop rushen kallar. 67." säger Emil')
+        print('"Ska vi dra på Coop? Coop rushen kallar. 67." säger Emil.')
         sleep(longdelay)
         if tänder == 1:
             print('"Helvete!" Wilmer täcker för sin näsa.')
@@ -302,7 +303,7 @@ while True:
             print("Plötsligt blev allting svart.")
             sleep(longdelay)
             print("För många elare var i hissen samtidigt. Kabeln bröt. Du dog tillsammans med de andra elarna.")
-            print(longdelay)
+            sleep(longdelay)
             print("[HISS ENDING]")
             break
         if choice.lower() == "n" or choice.lower() == "no":
@@ -320,7 +321,7 @@ while True:
         sleep(longdelay)
         if bajs == 1:
             print('"Asså, det var hundskit på golvet över hela trappan.')
-            sleep(delay)
+            sleep(DELAY)
             print("...")
             sleep(longdelay)
             print("Emil kollar under sin sko framför de andra. Det är fan från tidigare!")
@@ -344,7 +345,7 @@ while True:
         if bajs == 0:
             print("Elarna skrattar och har kul i Helios tills nästa lektion börjar. De går dit och jobbar med sina servrar.")
         sleep(longdelay)
-        print("Efter vad som kändes som en lång jävla lektion så är det äntligen lunch.")
+        print("Efter vad som kändes som en lång jävla lektion är det äntligen lunch.")
         sleep(longdelay)
         print("Emil går till lunchen tillsammans med sina polare.")
         break #FORTSÄTT SENARE
