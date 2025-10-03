@@ -2,11 +2,16 @@
 from time import sleep
 import random
 
-DELAY = 0.2
+DELAY = 0.5
 
 name = input("Vad heter du? ")
 life = 4
 demon = 20
+
+sen = 0
+bajs = 0
+tänder = 0
+
 while True:
     if name.lower() == "jens":
         choice = input("Nu, Jens, är det dags för att lära ut eltreorna! Du får totalt 4 liv. Hälsar du på dina elever? [Y]es/[N]o: ")
@@ -128,6 +133,77 @@ while True:
             else:
                 print("nähä")
                 break
+    if name.lower() == "emil":
+        print("[Emils tale börjar, och DU styr honom!]")
+        sleep(DELAY)
+        print("...")
+        sleep(DELAY)
+        print("Emil gäspar och stiger upp ur sängen.")
+        sleep(DELAY)
+        choice.input("Han kollar sig själv i spegeln och märker att han inte har borstat sina tänder än. Borstar han sina tänder?: [Y]es/[N]o")
+        if choice.lower() == "y" or choice.lower() == "yes":
+            print("Han går in till badrummet och borstar sina tänder.")
+        if choice.lower() == "n" or choice.lower() == "no":
+            print("Emil tänker efter lite, men bestämmer sig för att inte borsta sina tänder. Han orkar inte.")
+            tänder += 1
+            # OBORSTADE TÄNDER = 1
+        sleep(DELAY)
+        input("Emil sätter på sig sina kläder och ska nu ta sig till skolan.")
+        choice.input("Han känner sig fortfarande trött i kroppen. Ska Emil ta bussen?: [Y]es/[N]o")
+        if choice.lower() == "y" or choice.lower() == "yes":
+            print("Han går till sin busshållplats och väntar 5 minuter tills den äntligen kommer.")
+            sleep(DELAY)
+            choice.input("Han stiger på bussen. Försöker han undvika att betala sin bussbiljett?: [Y]es/[N]o")
+            if choice.lower() == "y" or choice.lower() == "yes":
+                print("Han försöker smita sig på bussen, men busschauffören skriker och kickar ut honom.")
+                sleep(DELAY)
+                print("Han väntar 15 minuter på nästa buss och betalar sin bussbiljett den här gången.")
+                sen += 1
+                # SEN TILL SKOLAN
+            if choice.lower() == "n" or choice.lower() == "no":
+                print("Han stiger på bussen och betalar sin bussbiljett.")
+                sleep(DELAY)
+                print("Busschauffören ger Emil en sne blick som om han kunde läsa Emil tankar.")    
+        if choice.lower() == "n" or choice.lower() == "no":
+            print("Han tar på sig sina skor och börjar promenera till skolan.")
+            sleep(DELAY)
+            choice.print("Emil märker inte det, men det ligger hundbajs framför honom. Du bestämmer, ska han gå i det?: [Y]es/[N]o")
+            if choice.lower() == "y" or choice.lower() == "yes":
+                print("Han går i hundbajset. Han märker att sina skor är kladdiga och tar en titt.")
+                sleep(DELAY)
+                print('"EWWW!!" skriker han. Han står en stund i tystnad men fortsätter gå. Han har en lektion att ta sig till.')
+                bajs += 1
+                # BAJS PÅ SKORNA
+            if choice.lower() == "n" or choice.lower() == "no":
+                print("Han märker hundbajset på sista sekunden och undviker det.")
+                sleep(DELAY)
+                print("Han låter ut ett ljud av lättnad. Han fortsätter promenera till skolan.")
+        sleep(DELAY)
+        print("Nu är han framme vid skolan. Han går in och ser sin vän Isak Engman.")
+        sleep(DELAY)
+        choice.input("De går in i hissen tillsammans. Skriker dem?: [Y]es/[N]o")
+        if choice.lower() == "y" or choice.lower() == "yes":
+            print('De skriker högt "HJÄLP!!! HJÄÄÄLP!!!". När de stiger ut ur hissen märker de att Eszter står precis utanför.')
+            sleep(DELAY)
+            print('Eszter säger till dem på skarpen.')
+        if choice.lower() == "n" or choice.lower() == "no":
+            print("Ovanligt beteende för Emil. Han skriker inte i hissen.")
+            sleep(DELAY)
+            choice.input("Tar Emil på Isaks bröst istället?: [Y]es/[N]o.")
+            if choice.lower() == "y" or choice.lower() == "yes":
+                print("Isak stönar högt medan hissen är påväg upp.")
+                sleep(DELAY)
+                print("När hissdörren öppnas så märker de att Eszter står precis utanför.")
+                sleep(DELAY)
+                print("Hon säger till dem båda på skarpen, även om Emil försökte säga att det bara var Isak.")
+            if choice.lower() == "n" or choice.lower() == "no":
+                print("Ingenting sker.")
+                sleep(DELAY)
+                print("När hissdörren öppnas så lättnar Emil då han ser Eszter precis utanför. Bra att han inte gjorde något.")
+        print("Emil tar av sig sina skor och går till sin lektion i Aristoteles.")
+        sleep(DELAY)
+        if sen == 1:
+
     else:
         print("Du är inte berättigad för att lära ut elarna.")
         break
