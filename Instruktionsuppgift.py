@@ -12,6 +12,7 @@ demon = 20
 sen = 0
 bajs = 0
 tänder = 0
+monster = 0
 
 while True:
     if name.lower() == "jens":
@@ -135,7 +136,7 @@ while True:
                 print("nähä")
                 break
     if name.lower() == "emil":
-        print("[Emils tale börjar, och DU styr honom!]")
+        print("[Emils tale börjar, och DU styr den!]")
         sleep(DELAY)
         print("...")
         sleep(DELAY)
@@ -207,6 +208,146 @@ while True:
         sleep(longdelay)
         if sen == 1:
             print("Mattias kollar på Emil.")
+            sleep(longdelay)
+            print('"Du är sen. Sätt dig ner och börja jobba med din jävla server. 67."')
+            sleep(longdelay)
+            choice = input("Emil ser Elvira. Skriker han slurs mot henne? [Y]es/[N]o: ")
+            if choice.lower() == "y" or choice.lower() == "yes":
+                print("Elvira kollar på Emil med ett half-assed leende.")
+                sleep(longdelay)
+                choice = input('Mattias blir sur. "Vill du ha en kränkningsanmälen eller?" säger han. Vill Emil det? [Y]es/[N]o')
+                if choice.lower() == "y" or choice.lower() == "yes":
+                    print('"Ja! Anmäl mig!" säger Emil. "Haha am i mutted?"')
+                    sleep(longdelay)
+                    print('"Då anmäler jag dig", säger Elvira skämtsamt.')
+                if choice.lower() == "n" or choice.lower() == "no":
+                    print('"Nej, no sir!" säger Emil. Mattias glor på Emil och hintar på att han ska sätta sig ner.')
+            if choice.lower() == "n" or choice.lower() == "no":
+                print("Emil sätter sig ner och börjar jobba på sin server. Elvira känner sig överraskad.")
+        if sen == 0:
+            print('"Wow, du är på tid! Bra jobbat! 67." säger Mattias.')
+            sleep(longdelay)
+            print('"Sätt dig ner och börja jobba med din förjävlade server innan jag köper mig själv en redbull." fortsätter han.')
+        sleep(longdelay)
+        print("Emil jobbar hårt med sin förbaskade server. Han märker att klockan börjar närma sig rast.")
+        sleep(longdelay)
+        print('"Mattias, får vi sluta tidigare? Snälla?" Mattias tittar på han.')
+        sleep(longdelay)
+        choice = input("Frästar Emil honom med en redbull som han har i sin väska? [Y]es/[N]o: ")
+        if choice.lower() == "y" or choice.lower() == "yes":
+            print('Mattias suckar. "Ge mig den och stick ut innan jag ändrar mig."')
+            sleep(longdelay)
+            print("Emil springer ut ur klassrummet och sätter sig i Helios, utanför det nybyggda biblioteket.")
+        if choice.lower() == "n" or choice.lower() == "no":
+            print('Mattias suckar. "Nej, det får ni inte. Forstätt jobba med din server."')
+            sleep(longdelay)
+            print('"Jag bryr mig inte om du är klar", säger han.')
+            sleep(longdelay)
+            print('"Jag kan lägga ut en till uppgift åt dig om du vill?", fortsätter han.')
+            sleep(longdelay)
+            print('"Nej tack. Jag väntar bara. 67." säger Emil')
+            sleep(longdelay)
+            print("Emil stirrar på sin dator i 10 minuter tills det äntligen blir rast.")
+            sleep(longdelay)
+            print("Emil springer ut ur klassrummet och sätter sig i Helios, utanför det nybyggda biblioteket.")
+        sleep(longdelay)
+        print("Både Wilmer och Emil sätter sig ner på soffan.")
+        sleep(longdelay)
+        print('"Ska vi dra på Coop? Coop rushen kallar. 67." säger Emil')
+        sleep(longdelay)
+        if tänder == 1:
+            print('"Helvete!" Wilmer täcker för sin näsa.')
+            sleep(DELAY)
+            print("...")
+            sleep(longdelay)
+            print('"Borstade du inte dina tänder imorse? Din andedräkt stinker som fan!"')
+            sleep(longdelay)
+            print('"Nah jag orkade inte, men kan vi dra på Coop jag är skithungrig? 67." svarar Emil.')
+            sleep(longdelay)
+            print('"Jaja, nu drar vi." säger Wilmer. Resten av elarna följer med också.')
+        if tänder == 0:
+            print('"Ja, men jag måste bara säga, Emil. Dina tänder är ovanligt rena."')
+            sleep(longdelay)
+            print('"Borstade du dem för första gången den här veckan eller?", skrattade Wilmer.')
+            sleep(longdelay)
+            print('"Käften! Jag borstar varje dag!". Emil ljuger rakt igenom sina tänder.')
+            sleep(longdelay)
+            print('"Jaja, vad du än säger. Nu drar vi." säger Wilmer. Resten av elarna följer med också.')
+        sleep(longdelay)
+        print("*Queue slur-slinging musik*")
+        sleep(longdelay)
+        choice = input("Nu är de äntligen framme! Emil kan inte bestämma sig mellan en vit monster eller en munk. Väljer han monstern? [Y]es/[N]o: ")
+        if choice.lower() == "y" or choice.lower() == "yes":
+            print("Emil tittar på sina val, men väljer i slutändan den vita monstern.")
+            monster += 1
+        if choice.lower() == "n" or choice.lower() == "no":
+            print("Emil tittar på sina val, men väljer i slutändan munken.")
+            sleep(longdelay)
+            print('"Rub my belly!" skriker någon i bakgrunden. Det var Elvira.')
+            sleep(DELAY)
+            print("...")
+            sleep(longdelay)
+            print("Emil känner sig tjock.")
+        sleep(longdelay)
+        print("Elarna promenerar tillbaka till skolan med sina köpta varor.")
+        sleep(longdelay)
+        choice = input("De andra elarna tar hissen. Tar Emil också hissen upp? [Y]es/[N]o: ")
+        if choice.lower() == "y" or choice.lower() == "yes":
+            print("Emil går in i hissen med de andra elarna. ")
+            sleep(longdelay)
+            print("Plötsligt hör de ett krak i hissen. Vad pågår?")
+            sleep(longdelay)
+            print("Hissen bryts. Lampan börjar blinka.")
+            sleep(longdelay)
+            print("Plötsligt blev allting svart.")
+            sleep(longdelay)
+            print("För många elare var i hissen samtidigt. Kabeln bröt. Du dog tillsammans med de andra elarna.")
+            print(longdelay)
+            print("[HISS ENDING]")
+            break
+        if choice.lower() == "n" or choice.lower() == "no":
+            print("Emil hör massa stönande och skrik i hissen medan han går upp för trapporna.")
+            sleep(longdelay)
+            choice = input("Trycker han på knappen på 1:a våningen? [Y]es/[N]o: ")
+            if choice.lower() == "y" or choice.lower() == "yes":
+                print("Emil trycker på knappen. Han går upp till andra våningen och hör en massa slur-slinging:")
+                sleep(longdelay)
+                print('"Jävla b*g! F*ggot! Tr*nny!" hör han samtidigt som han går in till skolan.')
+            if choice.lower() == "n" or choice.lower() == "no":
+                print("Emil springer upp för trapporna och går in i skolan innan hissen är på andra våningen.")
+        sleep(longdelay)
+        print("Emil sätter sig i Helios. De andra elarna sätter sig runt bordet.")
+        sleep(longdelay)
+        if bajs == 1:
+            print('"Asså, det var hundskit på golvet över hela trappan.')
+            sleep(delay)
+            print("...")
+            sleep(longdelay)
+            print("Emil kollar under sin sko framför de andra. Det är fan från tidigare!")
+            sleep(longdelay)
+            print("Alla skrattar och hånar Emil.")
+            sleep(longdelay)
+            print("Kastar Emil skon på Gustav? [Y]es/[N]o: ")
+            if choice.lower() == "y" or choice.lower() == "yes":
+                print("Emil kollar upp och ner från sin sko och kastar den snabbt på Gustav.")
+                sleep(longdelay)
+                print('"VAFAN! JAG KOMMER SÄGA TILL SARA! JÄVLA VIDER DU ÄR, EMIL!" skriker Gustav')
+                sleep(longdelay)
+                print("Efter en stund så kommer Sara och skäller ut Emil. Han blir skickad hem och avstängd från skolan.")
+                sleep(longdelay)
+                print("[HUNDSKIT ENDING]")
+                break
+            if choice.lower() == "n" or choice.lower() == "no":
+                print("Emil kollar upp och ner från sin sko, men bestämmer sig för att hålla tillbaka sin ilska.")
+                sleep(longdelay)
+                print("Han går vidare med sitt liv, även om han kommer bli hånad för resten av månaden.")
+        if bajs == 0:
+            print("Elarna skrattar och har kul i Helios tills nästa lektion börjar. De går dit och jobbar med sina servrar.")
+        sleep(longdelay)
+        print("Efter vad som kändes som en lång jävla lektion så är det äntligen lunch.")
+        sleep(longdelay)
+        print("Emil går till lunchen tillsammans med sina polare.")
+        break #FORTSÄTT SENARE
     else:
         print("Du är inte berättigad för att lära ut elarna.")
         break
