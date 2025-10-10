@@ -306,7 +306,8 @@ while True:
             print("För många elare var i hissen samtidigt. Kabeln bröt. Du dog tillsammans med de andra elarna.")
             sleep(longdelay)
             print("[HISS ENDING]")
-            break
+            sleep(longdelay)
+            #hiss ending
         if choice.lower() == "n" or choice.lower() == "no":
             print("Emil hör massa stönande och skrik i hissen medan han går upp för trapporna.")
             sleep(longdelay)
@@ -338,7 +339,8 @@ while True:
                 print("Efter en stund så kommer Sara och skäller ut Emil. Han blir skickad hem och avstängd från skolan.")
                 sleep(longdelay)
                 print("[HUNDSKIT ENDING]")
-                break
+                sleep(longdelay)
+                #hundskit ending
             if choice.lower() == "n" or choice.lower() == "no":
                 print("Emil kollar upp och ner från sin sko, men bestämmer sig för att hålla tillbaka sin ilska.")
                 sleep(longdelay)
@@ -398,7 +400,8 @@ while True:
             print("Emil säger hejdå till sina vänner och går hem.")
             sleep(longdelay)
             print("[GOOD ENDING]")
-            break
+            sleep(longdelay)
+            #good ending
         if droger == 1:
             print("Mattias kollar lite snett på sina elever.")
             sleep(longdelay)
@@ -423,7 +426,8 @@ while True:
                 print("Emil säger hejdå till sina vänner och drar hem.")
                 sleep(longdelay)
                 print("[HEMLÄXA ENDING]")
-                break
+                sleep(longdelay)
+                #hemläxa ending
             if choice.lower() == "n" or choice.lower() == "no":
                 print("Emil öppnar sin laptop. Texten är suddig. Han väljer att inte jobba.")
                 sleep(DELAY)
@@ -446,12 +450,14 @@ while True:
                     print("Emil säger hejdå till sina vänner och drar hem.")
                     sleep(longdelay)
                     print("[NEUTRAL ENDING, och han behåller sina vänner!]")
-                    break
+                    sleep(longdelay)
+                    #neutral ending
                 if choice.lower() == "n" or choice.lower() == "no":
                     print("Emil sticker hem på direkten. Han har haft nog.")
                     sleep(longdelay)
                     print("[NEUTRAL ENDING, och han förlorar sina vänner!]")
-                    break
+                    sleep(longdelay)
+                    #neutral ending
         if droger == 2:
             print("Mattias stirrar ner sina elever.")
             sleep(longdelay)
@@ -472,9 +478,18 @@ while True:
             sleep(longdelay)
             print("Emil får utegångsförbud och förlorar sina alkoholpengar för resten av året, och det är bara februari!")
             sleep(longdelay)
-            print("[BAD ENDING]")
-            break
-
+            print("[BAD ENDING]")  
+            sleep(longdelay)
+            #bad ending
+        print("Alla endings:")
+        print("     [HISS ENDING]")
+        print("     [HUNDSKIT ENDING]")
+        print("     [HEMLÄXA ENDING]")
+        print("     [BAD ENDING]")
+        print("     [NEUTRAL ENDING, och han förlorar sina vänner!]")
+        print("     [NEUTRAL ENDING, och han behåller sina vänner!]")
+        print("     [GOOD ENDING]")
+        break
 
     else:
         print("Du finns inte i mitt register. Hejdå.")
